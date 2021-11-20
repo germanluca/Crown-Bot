@@ -1,4 +1,3 @@
 rootProject.name = 'CrownBot'
 include 'crown-api'
 include 'crown-server'
-
