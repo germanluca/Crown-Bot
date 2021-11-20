@@ -1,3 +1,7 @@
 rootProject.name = 'CrownBot'
 include 'crown-api'
 include 'crown-server'
+include 'crown-client'
+include 'crown-spigot'
+include 'crown-proxy'
+
