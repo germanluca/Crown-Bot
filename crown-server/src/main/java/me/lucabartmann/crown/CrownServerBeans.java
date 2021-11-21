@@ -15,7 +15,7 @@ import java.util.Objects;
 
 @Component
 @PropertySource("classpath:application.properties")
-public class CrownServerBeans {
+public final class CrownServerBeans {
 
     private final ShardManager shardManager;
 

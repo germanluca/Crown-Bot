@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-public class GuildLeaveListener extends ListenerAdapter {
+public final class GuildLeaveListener extends ListenerAdapter {
 
     private final PunishDataRepository punishDataRepository;
 
     @Override
     public void onGuildLeave(@NotNull GuildLeaveEvent event) {
-        // TODO: 20.11.2021 Implement punish data deletion of guild
+        this.punishDataRepository.deleteAllByGuild(event.getGuild().getId());
     }
 }
